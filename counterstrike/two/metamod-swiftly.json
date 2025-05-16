@@ -1,0 +1,113 @@
+{
+  "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
+  "meta": {
+    "version": "PLCN_v1",
+    "update_url": null
+  },
+  "exported_at": "2025-05-16T19:33:37+00:00",
+  "name": "Counter Strike 2 (Metamod + Swiftly)",
+  "author": "admin@imp87.xyz",
+  "uuid": "3bcdd281-b3a7-4306-97a5-287abbda5c6c",
+  "description": "A Counter-Strike 2 server with automatic installation of Metamod and the latest version of Swiftly using the GitHub API",
+  "tags": [],
+  "features": null,
+  "docker_images": {
+    "SteamRT3": "ghcr.io\/1zc\/steamrt3-pterodactyl:latest",
+    "SteamRT3-Dev": "ghcr.io\/1zc\/steamrt3-pterodactyl:dev",
+    "SteamRT3-GFL": "registry.gitlab.gflclan.com\/infra\/cs2-pterodactyl:latest"
+  },
+  "file_denylist": [],
+  "startup": ".\/game\/cs2.sh -dedicated +ip {{SERVER_IP}} -port {{SERVER_PORT}} +map {{SRCDS_MAP}}",
+  "config": {
+    "files": "{}",
+    "startup": "{\r\n    \"done\": \"Connection to Steam servers successful\"\r\n}",
+    "logs": "{}",
+    "stop": "quit"
+  },
+  "scripts": {
+    "installation": {
+      "script": "#!\/bin\/bash\r\n# steamcmd Base Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n## just in case someone removed the defaults.\r\nif [ \"${STEAM_USER}\" == \"\" ]; then\r\nSTEAM_USER=anonymous\r\nSTEAM_PASS=\"\"\r\nSTEAM_AUTH=\"\"\r\nfi\r\n\r\napt install curl zip jq -y\r\n## download and install steamcmd\r\ncd \/tmp\r\nmkdir -p \/mnt\/server\/steamcmd\r\ncurl -sSL -o steamcmd.tar.gz https:\/\/steamcdn-a.akamaihd.net\/client\/installer\/steamcmd_linux.tar.gz\r\ntar -xzvf steamcmd.tar.gz -C \/mnt\/server\/steamcmd\r\nmkdir -p \/mnt\/server\/steamapps # Fix steamcmd disk write error when this folder is missing\r\ncd \/mnt\/server\/steamcmd\r\n# SteamCMD fails otherwise for some reason, even running as root.\r\n# This is changed at the end of the install process anyways.\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server\r\n## install game using steamcmd\r\n.\/steamcmd.sh +force_install_dir \/mnt\/server +login anonymous +app_update 730 ${EXTRA_FLAGS} +quit ## other flags may be needed depending on install. looking at you cs 1.6\r\n## set up 32 bit libraries\r\nmkdir -p \/mnt\/server\/.steam\/sdk32\r\ncp -v linux32\/steamclient.so ..\/.steam\/sdk32\/steamclient.so\r\n## set up 64 bit libraries\r\nmkdir -p \/mnt\/server\/.steam\/sdk64\r\ncp -v linux64\/steamclient.so ..\/.steam\/sdk64\/steamclient.so\r\n## install metamod\r\ncd \/mnt\/server\/game\/csgo # \u00c4ndere dies entsprechend dem richtigen Pfad f\u00fcr dein CS2 Server-Verzeichnis\r\ncurl -sSL -o mmsource.tar.gz https:\/\/mms.alliedmods.net\/mmsdrop\/2.0\/mmsource-2.0.0-git1345-linux.tar.gz\r\ntar -xzvf mmsource.tar.gz -C .\r\nrm -r mmsource.tar.gz\r\nwget -O \/mnt\/server\/game\/csgo\/gameinfo.gi https:\/\/fastdl.q-linx.de\/ptero\/cs2\/metamod\/gameinfo.gi\r\n#!\/bin\/bash\r\n\r\n# Download Swiftly\r\nREPO=\"swiftly-solution\/swiftly\"\r\nDEST_DIR=\"\/mnt\/server\/game\/csgo\/\"\r\n\r\n# Fetch the latest release data from GitHub API\r\nresponse=$(curl -s https:\/\/api.github.com\/repos\/$REPO\/releases\/latest)\r\n\r\n# Extract the download URL using jq\r\ndownload_url=$(echo $response | jq -r '.assets[0].browser_download_url')\r\n\r\nif [[ $download_url != \"null\" ]]; then\r\n    echo \"Download URL: $download_url\"\r\n    \r\n\r\n    file_name=$(basename $download_url)\r\n    dest_file=\"$DEST_DIR\/$file_name\"\r\n    curl -L -o $dest_file $download_url\r\n\r\n    if [[ -f $dest_file ]]; then\r\n        echo \"Downloaded to $dest_file\"\r\n        \r\n        unzip -o $dest_file -d $DEST_DIR\r\n        \r\n        if [[ $? -eq 0 ]]; then\r\n            echo \"Unzipped successfully\"\r\n            \r\n            rm $dest_file\r\n            echo \"Zip file deleted\"\r\n        else\r\n            echo \"Failed to unzip the file\"\r\n        fi\r\n    else\r\n        echo \"Failed to download the file\"\r\n    fi\r\nelse\r\n    echo \"No assets found in the latest release.\"\r\nfi",
+      "container": "ghcr.io\/pterodactyl\/installers:debian",
+      "entrypoint": "bash"
+    }
+  },
+  "variables": [
+    {
+      "sort": null,
+      "name": "Source AppID",
+      "description": "NOT VISIBLE TO USERS. DO NOT EDIT.",
+      "env_variable": "SRCDS_APPID",
+      "default_value": "730",
+      "user_viewable": false,
+      "user_editable": false,
+      "rules": [
+        "required",
+        "numeric"
+      ]
+    },
+    {
+      "sort": null,
+      "name": "SteamCMD Beta Name",
+      "description": "Set the ID of the beta to install and launch. Leave blank to disable Beta loading.",
+      "env_variable": "SRCDS_BETAID",
+      "default_value": "",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": [
+        "max:64"
+      ]
+    },
+    {
+      "sort": null,
+      "name": "SteamCMD Beta Password",
+      "description": "If required, set the password to use to access a Beta depot. Leave blank to disable.",
+      "env_variable": "SRCDS_BETAPASS",
+      "default_value": "",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": [
+        "max:64"
+      ]
+    },
+    {
+      "sort": null,
+      "name": "Map",
+      "description": "The default map for the server.",
+      "env_variable": "SRCDS_MAP",
+      "default_value": "de_dust2",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": [
+        "required",
+        "string",
+        "alpha_dash"
+      ]
+    },
+    {
+      "sort": null,
+      "name": "Disable Updates",
+      "description": "Set to 1 to stop updates.",
+      "env_variable": "SRCDS_STOP_UPDATE",
+      "default_value": "0",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": [
+        "required",
+        "numeric"
+      ]
+    },
+    {
+      "sort": null,
+      "name": "Validate Install",
+      "description": "Toggles SteamCMD validation of game server files. Set to 1 to enable.",
+      "env_variable": "SRCDS_VALIDATE",
+      "default_value": "1",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": [
+        "required",
+        "numeric"
+      ]
+    }
+  ]
+}
