@@ -9,7 +9,7 @@
   "author": "admin@imp87.xyz",
   "uuid": "3bcdd281-b3a7-4306-97a5-287abbda5c6c",
   "description": "A Counter-Strike 2 server with automatic installation of Metamod and the latest version of Swiftly using the GitHub API",
-  "tags": [],
+  "tags": ["cs2", "swiftly", "metamod"],
   "features": null,
   "docker_images": {
     "SteamRT3": "ghcr.io\/1zc\/steamrt3-pterodactyl:latest",
