@@ -99,5 +99,8 @@
                 "boolean"
             ]
         }
+    ],
+    "tags": [
+        "games-steamcmd/icarus"
     ]
 }

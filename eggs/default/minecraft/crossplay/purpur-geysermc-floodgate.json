@@ -70,5 +70,8 @@
             "rules": "required|string|max:20",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "minecraft/crossplay"
     ]
 }

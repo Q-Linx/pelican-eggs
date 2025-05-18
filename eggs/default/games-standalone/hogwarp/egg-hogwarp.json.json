@@ -153,5 +153,8 @@
             ],
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/hogwarp"
     ]
 }

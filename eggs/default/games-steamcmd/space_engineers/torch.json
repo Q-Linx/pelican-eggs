@@ -196,5 +196,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/space_engineers"
     ]
 }

@@ -35,5 +35,8 @@
             "entrypoint": "bash"
         }
     },
-    "variables": []
+    "variables": [],
+    "tags": [
+        "minecraft/bedrock"
+    ]
 }

@@ -130,5 +130,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/7_days_to_die"
     ]
 }

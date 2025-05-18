@@ -58,5 +58,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "minecraft/proxy"
     ]
 }

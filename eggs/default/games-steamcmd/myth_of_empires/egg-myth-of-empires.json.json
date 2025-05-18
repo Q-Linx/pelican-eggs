@@ -194,5 +194,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/myth_of_empires"
     ]
 }

@@ -42,5 +42,8 @@
             "rules": "required|string|max:30",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/among_us"
     ]
 }

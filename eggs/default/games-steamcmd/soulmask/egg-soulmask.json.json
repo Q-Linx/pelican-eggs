@@ -140,5 +140,8 @@
             "rules": "nullable|string|max:32",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/soulmask"
     ]
 }

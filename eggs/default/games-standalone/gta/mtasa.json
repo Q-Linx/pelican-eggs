@@ -9,7 +9,9 @@
     "author": "info@six-gaming.com",
     "uuid": "8c6e8e0c-dabb-4b90-afab-075619b93b9a",
     "description": "What more could you want? Multi Theft Auto provides the best online Grand Theft Auto experience there is. Read on to find out more.",
-    "tags": [],
+    "tags": [
+        "games-standalone/gta"
+    ],
     "features": [],
     "docker_images": {
         "ghcr.io/parkervcp/games:mta": "ghcr.io/parkervcp/games:mta"

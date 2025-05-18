@@ -9,7 +9,9 @@
     "author": "parker@parkervcp.com",
     "uuid": "9bf4389f-7df3-422e-b8ff-0c1e96c7da51",
     "description": "A generic egg to run deno code.",
-    "tags": [],
+    "tags": [
+        "generic/deno"
+    ],
     "features": [],
     "docker_images": {
         "ghcr.io/parkervcp/yolks:debian": "ghcr.io/parkervcp/yolks:debian"

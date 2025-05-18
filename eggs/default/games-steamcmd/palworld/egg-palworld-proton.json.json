@@ -163,5 +163,8 @@
             "rules": "required|string|in:Steam,Xbox",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/palworld"
     ]
 }

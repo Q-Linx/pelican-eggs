@@ -174,5 +174,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/counter_strike"
     ]
 }

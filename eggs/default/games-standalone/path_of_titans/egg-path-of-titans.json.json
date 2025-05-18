@@ -128,5 +128,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/path_of_titans"
     ]
 }

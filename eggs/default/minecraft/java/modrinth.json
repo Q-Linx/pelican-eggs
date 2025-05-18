@@ -64,5 +64,8 @@
                 "max:8"
             ]
         }
+    ],
+    "tags": [
+        "minecraft/java"
     ]
 }

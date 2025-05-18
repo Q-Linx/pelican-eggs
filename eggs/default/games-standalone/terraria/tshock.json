@@ -73,5 +73,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/terraria"
     ]
 }

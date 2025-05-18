@@ -86,5 +86,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/team_fortress_2_classic"
     ]
 }

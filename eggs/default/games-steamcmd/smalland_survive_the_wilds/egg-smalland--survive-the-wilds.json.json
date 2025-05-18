@@ -196,5 +196,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/smalland_survive_the_wilds"
     ]
 }

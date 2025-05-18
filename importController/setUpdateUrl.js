@@ -25,12 +25,18 @@ function processJsonFiles(dir) {
                 const relativePath = path.relative(jsonBase, fullPath).replace(/\\/g, '/');
                 const rawUrl = `${rawBase}/${relativePath}`;
 
+                // Ordnerpfad als Tag (ohne Dateiname)
+                const tagPath = path.dirname(relativePath);
+
                 // Setze update_url
                 if (!jsonData.meta) jsonData.meta = {};
                 jsonData.meta.update_url = rawUrl;
 
+                // Setze tags
+                jsonData.tags = [tagPath];
+
                 fs.writeFileSync(fullPath, JSON.stringify(jsonData, null, 4));
-                console.log(`✅ update_url gesetzt in: ${relativePath}`);
+                console.log(`✅ updated: ${relativePath}`);
             } catch (err) {
                 console.warn(`❌ Fehler bei Datei ${fullPath}: ${err.message}`);
             }
@@ -39,4 +45,4 @@ function processJsonFiles(dir) {
 }
 
 processJsonFiles(jsonBase);
-console.log('✅ Alle update_url-Werte wurden aktualisiert.');
+console.log('✅ Alle update_url und tags wurden aktualisiert.');

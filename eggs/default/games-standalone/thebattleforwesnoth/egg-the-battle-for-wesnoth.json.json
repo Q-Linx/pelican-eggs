@@ -71,5 +71,8 @@
                 "max:100"
             ]
         }
+    ],
+    "tags": [
+        "games-standalone/thebattleforwesnoth"
     ]
 }

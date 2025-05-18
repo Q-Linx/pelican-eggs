@@ -89,5 +89,8 @@
             "sort": 4,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/openttd"
     ]
 }

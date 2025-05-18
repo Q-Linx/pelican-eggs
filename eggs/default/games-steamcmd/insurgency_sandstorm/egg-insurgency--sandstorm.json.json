@@ -128,5 +128,8 @@
             "rules": "required|boolean",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/insurgency_sandstorm"
     ]
 }

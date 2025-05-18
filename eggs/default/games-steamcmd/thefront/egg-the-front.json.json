@@ -316,5 +316,8 @@
                 "boolean"
             ]
         }
+    ],
+    "tags": [
+        "games-steamcmd/thefront"
     ]
 }

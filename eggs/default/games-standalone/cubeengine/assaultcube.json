@@ -142,5 +142,8 @@
             ],
             "sort": 8
         }
+    ],
+    "tags": [
+        "games-standalone/cubeengine"
     ]
 }

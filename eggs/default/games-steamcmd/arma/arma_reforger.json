@@ -218,5 +218,8 @@
             "sort": 17,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/arma"
     ]
 }

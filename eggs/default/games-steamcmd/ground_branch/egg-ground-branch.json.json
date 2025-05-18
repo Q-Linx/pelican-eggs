@@ -140,5 +140,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/ground_branch"
     ]
 }

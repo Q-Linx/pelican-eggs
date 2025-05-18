@@ -117,5 +117,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/mount_blade_II_bannerlord"
     ]
 }

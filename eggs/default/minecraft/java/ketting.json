@@ -70,5 +70,8 @@
             "user_editable": true,
             "rules": []
         }
+    ],
+    "tags": [
+        "minecraft/java"
     ]
 }

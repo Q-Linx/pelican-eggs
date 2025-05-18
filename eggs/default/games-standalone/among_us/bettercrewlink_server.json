@@ -95,5 +95,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/among_us"
     ]
 }

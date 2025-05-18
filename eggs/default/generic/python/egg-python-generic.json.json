@@ -153,5 +153,8 @@
             ],
             "sort": 9
         }
+    ],
+    "tags": [
+        "generic/python"
     ]
 }

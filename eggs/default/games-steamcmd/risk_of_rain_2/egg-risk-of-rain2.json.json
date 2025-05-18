@@ -185,5 +185,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/risk_of_rain_2"
     ]
 }

@@ -62,5 +62,8 @@
             "rules": "required|numeric|between:1,256",
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/spacestation_14"
     ]
 }

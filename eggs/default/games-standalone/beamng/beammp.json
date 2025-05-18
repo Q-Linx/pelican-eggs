@@ -128,5 +128,8 @@
             "sort": 9,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/beamng"
     ]
 }

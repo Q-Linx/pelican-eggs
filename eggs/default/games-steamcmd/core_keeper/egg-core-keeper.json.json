@@ -152,5 +152,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/core_keeper"
     ]
 }

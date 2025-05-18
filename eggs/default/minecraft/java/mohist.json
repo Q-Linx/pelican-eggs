@@ -106,5 +106,8 @@
                 "string"
             ]
         }
+    ],
+    "tags": [
+        "minecraft/java"
     ]
 }

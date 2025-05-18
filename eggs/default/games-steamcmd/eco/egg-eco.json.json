@@ -295,5 +295,8 @@
             ],
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/eco"
     ]
 }

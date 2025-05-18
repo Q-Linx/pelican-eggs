@@ -141,5 +141,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/assetto_corsa"
     ]
 }

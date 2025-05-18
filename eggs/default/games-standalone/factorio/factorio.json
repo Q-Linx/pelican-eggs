@@ -150,5 +150,8 @@
             "sort": 11,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-standalone/factorio"
     ]
 }

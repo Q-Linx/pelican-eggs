@@ -65,5 +65,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "minecraft/bedrock"
     ]
 }

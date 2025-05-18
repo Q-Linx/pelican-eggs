@@ -127,5 +127,8 @@
                 "between:1,32"
             ]
         }
+    ],
+    "tags": [
+        "games-steamcmd/abiotic_factor"
     ]
 }

@@ -139,5 +139,8 @@
                 "boolean"
             ]
         }
+    ],
+    "tags": [
+        "games-steamcmd/lotr_moria"
     ]
 }

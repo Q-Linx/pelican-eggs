@@ -108,5 +108,8 @@
             "sort": null,
             "field_type": "text"
         }
+    ],
+    "tags": [
+        "games-steamcmd/quake_live"
     ]
 }
