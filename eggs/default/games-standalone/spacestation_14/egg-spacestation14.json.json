@@ -2,7 +2,7 @@
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
         "version": "PTDL_v2",
-        "update_url": null
+        "update_url": "https://raw.githubusercontent.com/Q-Linx/pelican-eggs/main/eggs/default/games-standalone/spacestation_14/egg-spacestation14.json.json"
     },
     "exported_at": "2024-09-10T16:25:49+00:00",
     "name": "Spacestation 14",
@@ -11,10 +11,10 @@
     "description": "Space Station 14 tells the story of an ordinary shift on a space station gone wrong. Immerse yourself into your role, tinker with detailed systems, and survive the chaos in this round-based multiplayer role playing game.",
     "features": [],
     "docker_images": {
-        "Dotnet 8": "ghcr.io\/parkervcp\/yolks:dotnet_8"
+        "Dotnet 8": "ghcr.io/parkervcp/yolks:dotnet_8"
     },
     "file_denylist": [],
-    "startup": ".\/Robust.Server",
+    "startup": "./Robust.Server",
     "config": {
         "files": "{\r\n    \"server_config.toml\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"port\": \"port = {{server.allocations.default.port}}\",\r\n            \"hostname\": \"hostname = \\\"{{server.environment.SERVER_NAME}}\\\"\",\r\n            \"tickrate\": \"tickrate = {{server.environment.SERVER_TICK}}\",\r\n            \"max_connections\": \"max_connections = {{server.environment.SERVER_MAX_PLAYERS}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Server Version\"\r\n}",
@@ -23,8 +23,8 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n\r\nARCH=$([[ \"$(uname -m)\" == \"x86_64\" ]] && echo \"x64\" || echo \"arm64\")\r\nV=$(curl -sSL https:\/\/wizards.cdn.spacestation14.com\/fork\/wizards | grep \".Server_linux\" | grep -i ${ARCH} | head -1 | awk '{print $2}' | sed 's\/^href=\"\/\/;s\/\">Linux\/\/')\r\n\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\n\r\necho \"Running: curl -sSL -o server_linux.zip https:\/\/wizards.cdn.spacestation14.com${V}\"\r\ncurl -sSL -o server_linux.zip \"https:\/\/wizards.cdn.spacestation14.com${V}\"\r\nunzip -o server_linux.zip\r\nrm server_linux.zip\r\n\r\nchmod +x Robust.Server\r\n\r\n## install end\r\necho \"-----------------------------------------\"\r\necho \"Installation completed...\"\r\necho \"-----------------------------------------\"",
-            "container": "ghcr.io\/parkervcp\/installers:debian",
+            "script": "#!/bin/bash\r\n\r\nARCH=$([[ \"$(uname -m)\" == \"x86_64\" ]] && echo \"x64\" || echo \"arm64\")\r\nV=$(curl -sSL https://wizards.cdn.spacestation14.com/fork/wizards | grep \".Server_linux\" | grep -i ${ARCH} | head -1 | awk '{print $2}' | sed 's/^href=\"//;s/\">Linux//')\r\n\r\nmkdir -p /mnt/server\r\ncd /mnt/server\r\n\r\necho \"Running: curl -sSL -o server_linux.zip https://wizards.cdn.spacestation14.com${V}\"\r\ncurl -sSL -o server_linux.zip \"https://wizards.cdn.spacestation14.com${V}\"\r\nunzip -o server_linux.zip\r\nrm server_linux.zip\r\n\r\nchmod +x Robust.Server\r\n\r\n## install end\r\necho \"-----------------------------------------\"\r\necho \"Installation completed...\"\r\necho \"-----------------------------------------\"",
+            "container": "ghcr.io/parkervcp/installers:debian",
             "entrypoint": "bash"
         }
     },

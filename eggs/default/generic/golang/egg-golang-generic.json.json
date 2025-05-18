@@ -2,7 +2,7 @@
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
         "version": "PTDL_v2",
-        "update_url": null
+        "update_url": "https://raw.githubusercontent.com/Q-Linx/pelican-eggs/main/eggs/default/generic/golang/egg-golang-generic.json.json"
     },
     "exported_at": "2024-06-02T14:43:56+00:00",
     "name": "golang generic",
@@ -11,10 +11,10 @@
     "description": "A generic golang egg that compiles the application and saves an executable\r\n\r\nMeant to be customized before it is used.",
     "features": null,
     "docker_images": {
-        "ghcr.io\/parkervcp\/yolks:debian": "ghcr.io\/parkervcp\/yolks:debian"
+        "ghcr.io/parkervcp/yolks:debian": "ghcr.io/parkervcp/yolks:debian"
     },
     "file_denylist": [],
-    "startup": ".\/${EXECUTABLE}",
+    "startup": "./${EXECUTABLE}",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"change this part\"\r\n}",
@@ -23,7 +23,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n# golang generic package\r\n\r\n\r\nif [ ! -d \/mnt\/server\/ ]; then\r\n    mkdir -p \/mnt\/server\/\r\nfi\r\n\r\ngo get ${GO_PACKAGE}\r\n\r\ncd src\/${GO_PACKAGE}\r\n\r\ngo get\r\n\r\ngo build\r\n\r\ncp -f ${EXECUTABLE} \/mnt\/server\/",
+            "script": "#!/bin/bash\r\n# golang generic package\r\n\r\n\r\nif [ ! -d /mnt/server/ ]; then\r\n    mkdir -p /mnt/server/\r\nfi\r\n\r\ngo get ${GO_PACKAGE}\r\n\r\ncd src/${GO_PACKAGE}\r\n\r\ngo get\r\n\r\ngo build\r\n\r\ncp -f ${EXECUTABLE} /mnt/server/",
             "container": "golang:1.15-buster",
             "entrypoint": "bash"
         }

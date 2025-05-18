@@ -2,7 +2,7 @@
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
         "version": "PLCN_v1",
-        "update_url": "https:\/\/raw.githubusercontent.com\/pelican-eggs\/games-standalone\/blob\/main\/archean\/egg-archean.json"
+        "update_url": "https://raw.githubusercontent.com/Q-Linx/pelican-eggs/main/eggs/default/games-standalone/archean/egg-archean.json.json"
     },
     "exported_at": "2024-11-02T08:25:16+00:00",
     "name": "Archean",
@@ -11,20 +11,20 @@
     "description": "Archean invites you to unleash your creativity alone or with friends in a creative sandbox mode.Design and build vehicles, bases, rockets, space stations and much more using customizable modular blocks.Create unique configurations using components, program their behavior and explore an environment free of constraints.\\nTest your builds, refine your designs and defy the laws of physics.Archean is a game in development focused on engineering and build.",
     "features": [],
     "docker_images": {
-        "Ubuntu": "ghcr.io\/pelican-eggs\/yolks:ubuntu"
+        "Ubuntu": "ghcr.io/pelican-eggs/yolks:ubuntu"
     },
     "file_denylist": [],
-    "startup": "echo \"$ADMINS\" > \"archean-data\/server\/admins.txt\"; cd \/home\/container\/archean-server\/; .\/Archean server",
+    "startup": "echo \"$ADMINS\" > \"archean-data/server/admins.txt\"; cd /home/container/archean-server/; ./Archean server",
     "config": {
-        "files": "{\n\t\"archean-data\/server\/server.ini\": {\n\t\t\"parser\": \"ini\",\n\t\t\"find\": {\n\t\t\t\"server.server_public_name\": \"{{server.environment.SERVER_NAME}}\",\n\t\t\t\"server.game_mode\": \"{{server.environment.GAME_MODE}}\",\n\t\t\t\"server.server_online\": \"{{server.environment.ONLINE_MODE}}\",\n\t\t\t\"server.max_simultaneous_players\": \"{{server.environment.MAX_PLAYERS}}\",\n\t\t\t\"server.password\": \"{{server.environment.PASSWORD}}\",\n\t\t\t\"networking.listen_port\": \"{{server.allocations.default.port}}\",\n\t\t\t\"game.spawn\": \"{{server.environment.SPAWN_PLANET}}\",\n\t\t\t\"game.world\": \"{{server.environment.WORLD_NAME}}\",\n\t\t\t\"game.auto_save_interval_seconds\": \"{{server.environment.AUTOSAVE_INTERVAL}}\",\n\t\t\t\"game.updates_per_second\": \"{{server.environment.UPDATES_PER_SECOND}}\",\n\t\t\t\"game.physics_steps_per_update\": \"{{server.environment.PHYSICS_UPDATES_PER_UPDATE}}\"\n\t\t}\n\t}\n}",
+        "files": "{\n\t\"archean-data/server/server.ini\": {\n\t\t\"parser\": \"ini\",\n\t\t\"find\": {\n\t\t\t\"server.server_public_name\": \"{{server.environment.SERVER_NAME}}\",\n\t\t\t\"server.game_mode\": \"{{server.environment.GAME_MODE}}\",\n\t\t\t\"server.server_online\": \"{{server.environment.ONLINE_MODE}}\",\n\t\t\t\"server.max_simultaneous_players\": \"{{server.environment.MAX_PLAYERS}}\",\n\t\t\t\"server.password\": \"{{server.environment.PASSWORD}}\",\n\t\t\t\"networking.listen_port\": \"{{server.allocations.default.port}}\",\n\t\t\t\"game.spawn\": \"{{server.environment.SPAWN_PLANET}}\",\n\t\t\t\"game.world\": \"{{server.environment.WORLD_NAME}}\",\n\t\t\t\"game.auto_save_interval_seconds\": \"{{server.environment.AUTOSAVE_INTERVAL}}\",\n\t\t\t\"game.updates_per_second\": \"{{server.environment.UPDATES_PER_SECOND}}\",\n\t\t\t\"game.physics_steps_per_update\": \"{{server.environment.PHYSICS_UPDATES_PER_UPDATE}}\"\n\t\t}\n\t}\n}",
         "startup": "{\n\"done\": \"Server started\"\n}",
         "logs": "{}",
         "stop": "^C"
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\n\ncd \/mnt\/server\n\n## add git ending if it's not on the address\nif [[ ${GIT_ADDRESS} != *.git ]]; then\n    GIT_ADDRESS=${GIT_ADDRESS}.git\nfi\n\n## pull git bot repo with update functionality\nif [ \"$(ls -A \/mnt\/server\/archean-server)\" ]; then\n    echo -e \"\/mnt\/server\/archean-server directory is not empty.\"\n    cd archean-server\/\n    if [ -d .git ]; then\n        echo -e \".git directory exists\"\n        if [ -f .git\/config ]; then\n            echo -e \"loading info from git config\"\n            ORIGIN=$(git config --get remote.origin.url)\n        else\n            echo -e \"files found with no git config\"\n            echo -e \"closing out without touching things to not break anything\"\n            exit 10\n        fi\n    fi\n\n    if [ \"${ORIGIN}\" == \"${GIT_ADDRESS}\" ]; then\n        echo \"pulling latest from github\"\n        git pull\n    fi\nelse\n    echo -e \"\/mnt\/server\/archean-server is empty.\\ncloning files into repo\"\n    if [ -z ${BRANCH} ]; then\n        echo -e \"cloning default branch\"\n        git clone --single-branch ${GIT_ADDRESS} archean-server\/\n    else\n        echo -e \"cloning ${BRANCH}'\"\n        git clone --single-branch --branch ${BRANCH} ${GIT_ADDRESS} archean-server\/\n    fi\nfi\n\ncurl -o \"archean-data\/server\/server.ini\" --create-dirs https:\/\/raw.githubusercontent.com\/pelican-eggs\/games-standalone\/refs\/heads\/main\/archean\/server.ini\n\necho ******************************************\necho Installation Completed\necho ******************************************",
-            "container": "ghcr.io\/pelican-eggs\/installers:debian",
+            "script": "#!/bin/bash\n\ncd /mnt/server\n\n## add git ending if it's not on the address\nif [[ ${GIT_ADDRESS} != *.git ]]; then\n    GIT_ADDRESS=${GIT_ADDRESS}.git\nfi\n\n## pull git bot repo with update functionality\nif [ \"$(ls -A /mnt/server/archean-server)\" ]; then\n    echo -e \"/mnt/server/archean-server directory is not empty.\"\n    cd archean-server/\n    if [ -d .git ]; then\n        echo -e \".git directory exists\"\n        if [ -f .git/config ]; then\n            echo -e \"loading info from git config\"\n            ORIGIN=$(git config --get remote.origin.url)\n        else\n            echo -e \"files found with no git config\"\n            echo -e \"closing out without touching things to not break anything\"\n            exit 10\n        fi\n    fi\n\n    if [ \"${ORIGIN}\" == \"${GIT_ADDRESS}\" ]; then\n        echo \"pulling latest from github\"\n        git pull\n    fi\nelse\n    echo -e \"/mnt/server/archean-server is empty.\\ncloning files into repo\"\n    if [ -z ${BRANCH} ]; then\n        echo -e \"cloning default branch\"\n        git clone --single-branch ${GIT_ADDRESS} archean-server/\n    else\n        echo -e \"cloning ${BRANCH}'\"\n        git clone --single-branch --branch ${BRANCH} ${GIT_ADDRESS} archean-server/\n    fi\nfi\n\ncurl -o \"archean-data/server/server.ini\" --create-dirs https://raw.githubusercontent.com/pelican-eggs/games-standalone/refs/heads/main/archean/server.ini\n\necho ******************************************\necho Installation Completed\necho ******************************************",
+            "container": "ghcr.io/pelican-eggs/installers:debian",
             "entrypoint": "bash"
         }
     },
@@ -148,7 +148,7 @@
         {
             "sort": 9,
             "name": "Admins",
-            "description": "A line-seperated list of steamids from users that should get admin privileges.\nVisit https:\/\/steamid.io to get a steamid.",
+            "description": "A line-seperated list of steamids from users that should get admin privileges.\nVisit https://steamid.io to get a steamid.",
             "env_variable": "ADMINS",
             "default_value": "",
             "user_viewable": true,
@@ -176,7 +176,7 @@
             "name": "Git Address",
             "description": "",
             "env_variable": "GIT_ADDRESS",
-            "default_value": "https:\/\/github.com\/batcholi\/Archean_game_linux.git",
+            "default_value": "https://github.com/batcholi/Archean_game_linux.git",
             "user_viewable": true,
             "user_editable": false,
             "rules": [

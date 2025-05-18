@@ -1,4 +1,7 @@
 {
     "token": "your_token_here",
-    "prefix": "your_custom_prefix_here"
+    "prefix": "your_custom_prefix_here",
+    "meta": {
+        "update_url": "https://raw.githubusercontent.com/Q-Linx/pelican-eggs/main/eggs/default/chatbots/discord/corpbot.json"
+    }
 }
