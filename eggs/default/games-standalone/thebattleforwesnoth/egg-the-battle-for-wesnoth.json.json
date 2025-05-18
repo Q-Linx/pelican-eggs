@@ -73,6 +73,7 @@
         }
     ],
     "tags": [
-        "games-standalone/thebattleforwesnoth"
+        "games-standalone/thebattleforwesnoth",
+        "games-standalone"
     ]
 }

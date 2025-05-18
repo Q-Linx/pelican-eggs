@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/holdfast"
+        "games-steamcmd/holdfast",
+        "games-steamcmd"
     ]
 }

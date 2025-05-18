@@ -88,6 +88,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/team_fortress_2_classic"
+        "games-steamcmd/team_fortress_2_classic",
+        "games-steamcmd"
     ]
 }

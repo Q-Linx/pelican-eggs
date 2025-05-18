@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "games-standalone/veloren"
+        "games-standalone/veloren",
+        "games-standalone"
     ]
 }

@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-standalone/among_us"
+        "games-standalone/among_us",
+        "games-standalone"
     ]
 }

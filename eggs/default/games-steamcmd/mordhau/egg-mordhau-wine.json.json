@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/mordhau"
+        "games-steamcmd/mordhau",
+        "games-steamcmd"
     ]
 }

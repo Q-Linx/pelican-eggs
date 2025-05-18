@@ -132,6 +132,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/hlds_server"
+        "games-steamcmd/hlds_server",
+        "games-steamcmd"
     ]
 }

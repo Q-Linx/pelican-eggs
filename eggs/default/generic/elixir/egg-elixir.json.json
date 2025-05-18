@@ -101,6 +101,7 @@
         }
     ],
     "tags": [
-        "generic/elixir"
+        "generic/elixir",
+        "generic"
     ]
 }

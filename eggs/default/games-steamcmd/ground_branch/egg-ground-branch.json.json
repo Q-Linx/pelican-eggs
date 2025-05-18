@@ -142,6 +142,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/ground_branch"
+        "games-steamcmd/ground_branch",
+        "games-steamcmd"
     ]
 }

@@ -150,6 +150,7 @@
         }
     ],
     "tags": [
-        "generic/nodejs"
+        "generic/nodejs",
+        "generic"
     ]
 }

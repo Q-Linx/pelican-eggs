@@ -130,6 +130,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/astroneer"
+        "games-steamcmd/astroneer",
+        "games-steamcmd"
     ]
 }

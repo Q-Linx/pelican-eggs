@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/neosvr"
+        "games-steamcmd/neosvr",
+        "games-steamcmd"
     ]
 }

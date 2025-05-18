@@ -220,6 +220,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/avorion"
+        "games-steamcmd/avorion",
+        "games-steamcmd"
     ]
 }

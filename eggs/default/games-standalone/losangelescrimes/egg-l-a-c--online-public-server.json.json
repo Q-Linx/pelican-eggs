@@ -42,6 +42,7 @@
         }
     ],
     "tags": [
-        "games-standalone/losangelescrimes"
+        "games-standalone/losangelescrimes",
+        "games-standalone"
     ]
 }

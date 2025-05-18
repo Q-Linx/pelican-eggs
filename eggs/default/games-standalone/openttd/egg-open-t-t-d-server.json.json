@@ -91,6 +91,7 @@
         }
     ],
     "tags": [
-        "games-standalone/openttd"
+        "games-standalone/openttd",
+        "games-standalone"
     ]
 }

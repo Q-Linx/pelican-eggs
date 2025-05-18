@@ -132,6 +132,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/operation_harsh_doorstop"
+        "games-steamcmd/operation_harsh_doorstop",
+        "games-steamcmd"
     ]
 }

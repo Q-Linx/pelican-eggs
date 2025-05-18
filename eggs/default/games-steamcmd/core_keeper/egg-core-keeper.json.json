@@ -154,6 +154,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/core_keeper"
+        "games-steamcmd/core_keeper",
+        "games-steamcmd"
     ]
 }

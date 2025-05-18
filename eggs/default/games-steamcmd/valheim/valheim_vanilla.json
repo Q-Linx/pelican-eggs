@@ -209,6 +209,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/valheim"
+        "games-steamcmd/valheim",
+        "games-steamcmd"
     ]
 }

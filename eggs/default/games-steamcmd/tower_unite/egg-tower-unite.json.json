@@ -99,6 +99,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/tower_unite"
+        "games-steamcmd/tower_unite",
+        "games-steamcmd"
     ]
 }

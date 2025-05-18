@@ -10,7 +10,8 @@
     "uuid": "66cba527-a8b8-4b1e-aa39-c10f92cdeeba",
     "description": "Don’t Starve Together is an uncompromising wilderness survival game full of science and magic.",
     "tags": [
-        "games-steamcmd/dont_starve"
+        "games-steamcmd/dont_starve",
+        "games-steamcmd"
     ],
     "features": [
         "steam_disk_space"

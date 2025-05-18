@@ -89,6 +89,7 @@
         }
     ],
     "tags": [
-        "generic/rust"
+        "generic/rust",
+        "generic"
     ]
 }

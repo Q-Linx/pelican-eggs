@@ -142,6 +142,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/soulmask"
+        "games-steamcmd/soulmask",
+        "games-steamcmd"
     ]
 }

@@ -24,9 +24,9 @@ function processJsonFiles(dir) {
 
                 const relativePath = path.relative(jsonBase, fullPath).replace(/\\/g, '/');
                 const rawUrl = `${rawBase}/${relativePath}`;
+                const tagPath = path.dirname(relativePath); // z. B. minecraft/java
 
-                // Ordnerpfad als Tag (ohne Dateiname)
-                const tagPath = path.dirname(relativePath);
+                const firstFolder = tagPath.split('/')[0]; // z. B. minecraft
 
                 // Setze update_url
                 if (!jsonData.meta) jsonData.meta = {};
@@ -34,6 +34,9 @@ function processJsonFiles(dir) {
 
                 // Setze tags
                 jsonData.tags = [tagPath];
+                if (firstFolder && firstFolder !== tagPath) {
+                    jsonData.tags.push(firstFolder);
+                }
 
                 fs.writeFileSync(fullPath, JSON.stringify(jsonData, null, 4));
                 console.log(`✅ updated: ${relativePath}`);

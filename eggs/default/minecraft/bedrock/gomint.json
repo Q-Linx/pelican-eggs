@@ -37,6 +37,7 @@
     },
     "variables": [],
     "tags": [
-        "minecraft/bedrock"
+        "minecraft/bedrock",
+        "minecraft"
     ]
 }

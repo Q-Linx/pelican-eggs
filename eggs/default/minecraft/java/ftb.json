@@ -101,6 +101,7 @@
         }
     ],
     "tags": [
-        "minecraft/java"
+        "minecraft/java",
+        "minecraft"
     ]
 }

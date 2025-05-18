@@ -251,6 +251,7 @@
         }
     ],
     "tags": [
-        "games-standalone/neverwinter_nights_ee"
+        "games-standalone/neverwinter_nights_ee",
+        "games-standalone"
     ]
 }

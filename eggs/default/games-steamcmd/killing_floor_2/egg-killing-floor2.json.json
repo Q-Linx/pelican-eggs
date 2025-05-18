@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/killing_floor_2"
+        "games-steamcmd/killing_floor_2",
+        "games-steamcmd"
     ]
 }

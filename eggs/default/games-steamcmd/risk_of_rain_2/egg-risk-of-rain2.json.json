@@ -187,6 +187,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/risk_of_rain_2"
+        "games-steamcmd/risk_of_rain_2",
+        "games-steamcmd"
     ]
 }

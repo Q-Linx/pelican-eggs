@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "games-standalone/wolfenstein_enemy_territory"
+        "games-standalone/wolfenstein_enemy_territory",
+        "games-standalone"
     ]
 }

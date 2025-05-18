@@ -198,6 +198,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/rust"
+        "games-steamcmd/rust",
+        "games-steamcmd"
     ]
 }

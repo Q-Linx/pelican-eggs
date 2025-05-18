@@ -120,6 +120,7 @@
         }
     ],
     "tags": [
-        "games-standalone/rimworld"
+        "games-standalone/rimworld",
+        "games-standalone"
     ]
 }

@@ -101,6 +101,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/qanga"
+        "games-steamcmd/qanga",
+        "games-steamcmd"
     ]
 }

@@ -10,7 +10,8 @@
     "uuid": "9bf4389f-7df3-422e-b8ff-0c1e96c7da51",
     "description": "A generic egg to run deno code.",
     "tags": [
-        "generic/deno"
+        "generic/deno",
+        "generic"
     ],
     "features": [],
     "docker_images": {

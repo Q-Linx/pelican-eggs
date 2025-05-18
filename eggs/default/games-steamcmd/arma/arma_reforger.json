@@ -220,6 +220,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/arma"
+        "games-steamcmd/arma",
+        "games-steamcmd"
     ]
 }

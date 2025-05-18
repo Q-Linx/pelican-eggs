@@ -240,6 +240,7 @@
         }
     ],
     "tags": [
-        "games-standalone/openrct2"
+        "games-standalone/openrct2",
+        "games-standalone"
     ]
 }

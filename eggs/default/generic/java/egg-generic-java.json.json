@@ -47,6 +47,7 @@
         }
     ],
     "tags": [
-        "generic/java"
+        "generic/java",
+        "generic"
     ]
 }

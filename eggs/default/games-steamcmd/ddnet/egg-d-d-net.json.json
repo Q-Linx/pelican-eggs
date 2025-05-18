@@ -132,6 +132,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/ddnet"
+        "games-steamcmd/ddnet",
+        "games-steamcmd"
     ]
 }

@@ -187,6 +187,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/post_scriptum"
+        "games-steamcmd/post_scriptum",
+        "games-steamcmd"
     ]
 }

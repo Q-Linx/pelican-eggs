@@ -144,6 +144,7 @@
         }
     ],
     "tags": [
-        "games-standalone/cubeengine"
+        "games-standalone/cubeengine",
+        "games-standalone"
     ]
 }

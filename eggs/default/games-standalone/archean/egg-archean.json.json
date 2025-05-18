@@ -199,6 +199,7 @@
         }
     ],
     "tags": [
-        "games-standalone/archean"
+        "games-standalone/archean",
+        "games-standalone"
     ]
 }

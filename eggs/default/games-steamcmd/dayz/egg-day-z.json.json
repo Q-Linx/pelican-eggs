@@ -385,6 +385,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/dayz"
+        "games-steamcmd/dayz",
+        "games-steamcmd"
     ]
 }

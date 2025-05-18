@@ -198,6 +198,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/smalland_survive_the_wilds"
+        "games-steamcmd/smalland_survive_the_wilds",
+        "games-steamcmd"
     ]
 }

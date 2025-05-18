@@ -209,6 +209,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/foundry"
+        "games-steamcmd/foundry",
+        "games-steamcmd"
     ]
 }

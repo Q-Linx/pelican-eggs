@@ -184,6 +184,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/rising_world"
+        "games-steamcmd/rising_world",
+        "games-steamcmd"
     ]
 }

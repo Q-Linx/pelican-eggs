@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-standalone/ksp"
+        "games-standalone/ksp",
+        "games-standalone"
     ]
 }

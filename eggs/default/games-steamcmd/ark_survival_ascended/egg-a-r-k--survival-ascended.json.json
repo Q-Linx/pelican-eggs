@@ -229,6 +229,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/ark_survival_ascended"
+        "games-steamcmd/ark_survival_ascended",
+        "games-steamcmd"
     ]
 }

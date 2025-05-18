@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/frozen_flame"
+        "games-steamcmd/frozen_flame",
+        "games-steamcmd"
     ]
 }

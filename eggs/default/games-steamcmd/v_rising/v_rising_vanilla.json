@@ -342,6 +342,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/v_rising"
+        "games-steamcmd/v_rising",
+        "games-steamcmd"
     ]
 }

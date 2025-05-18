@@ -86,6 +86,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/assetto_corsa"
+        "games-steamcmd/assetto_corsa",
+        "games-steamcmd"
     ]
 }

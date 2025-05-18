@@ -163,6 +163,7 @@
         }
     ],
     "tags": [
-        "games-standalone/doom"
+        "games-standalone/doom",
+        "games-standalone"
     ]
 }

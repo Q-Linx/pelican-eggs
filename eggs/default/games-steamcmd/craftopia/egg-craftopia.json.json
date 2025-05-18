@@ -66,6 +66,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/craftopia"
+        "games-steamcmd/craftopia",
+        "games-steamcmd"
     ]
 }

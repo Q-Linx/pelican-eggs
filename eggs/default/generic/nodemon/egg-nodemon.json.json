@@ -140,6 +140,7 @@
         }
     ],
     "tags": [
-        "generic/nodemon"
+        "generic/nodemon",
+        "generic"
     ]
 }

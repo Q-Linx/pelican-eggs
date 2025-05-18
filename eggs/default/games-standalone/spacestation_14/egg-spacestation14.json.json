@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "games-standalone/spacestation_14"
+        "games-standalone/spacestation_14",
+        "games-standalone"
     ]
 }

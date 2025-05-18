@@ -19,6 +19,7 @@
         "update_url": "https://raw.githubusercontent.com/Q-Linx/pelican-eggs/main/eggs/default/games-steamcmd/modiverse/ServerConfiguration.json.json"
     },
     "tags": [
-        "games-steamcmd/modiverse"
+        "games-steamcmd/modiverse",
+        "games-steamcmd"
     ]
 }

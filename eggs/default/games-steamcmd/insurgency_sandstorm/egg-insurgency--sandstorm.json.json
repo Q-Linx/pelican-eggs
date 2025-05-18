@@ -130,6 +130,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/insurgency_sandstorm"
+        "games-steamcmd/insurgency_sandstorm",
+        "games-steamcmd"
     ]
 }

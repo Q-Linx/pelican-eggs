@@ -163,6 +163,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/wurm_unlimited"
+        "games-steamcmd/wurm_unlimited",
+        "games-steamcmd"
     ]
 }

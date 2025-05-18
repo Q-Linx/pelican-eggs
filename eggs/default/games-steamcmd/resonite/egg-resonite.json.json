@@ -141,6 +141,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/resonite"
+        "games-steamcmd/resonite",
+        "games-steamcmd"
     ]
 }

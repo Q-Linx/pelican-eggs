@@ -86,6 +86,7 @@
         }
     ],
     "tags": [
-        "games-standalone/ddracenetwork"
+        "games-standalone/ddracenetwork",
+        "games-standalone"
     ]
 }

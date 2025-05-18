@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/colony_survival"
+        "games-steamcmd/colony_survival",
+        "games-steamcmd"
     ]
 }

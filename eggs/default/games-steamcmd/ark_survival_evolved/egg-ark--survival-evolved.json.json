@@ -192,6 +192,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/ark_survival_evolved"
+        "games-steamcmd/ark_survival_evolved",
+        "games-steamcmd"
     ]
 }

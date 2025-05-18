@@ -86,6 +86,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/dead_matter"
+        "games-steamcmd/dead_matter",
+        "games-steamcmd"
     ]
 }

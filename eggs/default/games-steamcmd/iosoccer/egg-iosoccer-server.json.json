@@ -110,6 +110,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/iosoccer"
+        "games-steamcmd/iosoccer",
+        "games-steamcmd"
     ]
 }

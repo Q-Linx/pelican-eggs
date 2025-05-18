@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-standalone/gta"
+        "games-standalone/gta",
+        "games-standalone"
     ]
 }

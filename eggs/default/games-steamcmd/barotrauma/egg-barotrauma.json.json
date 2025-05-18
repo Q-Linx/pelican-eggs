@@ -55,6 +55,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/barotrauma"
+        "games-steamcmd/barotrauma",
+        "games-steamcmd"
     ]
 }

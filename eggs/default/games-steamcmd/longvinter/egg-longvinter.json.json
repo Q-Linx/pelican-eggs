@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/longvinter"
+        "games-steamcmd/longvinter",
+        "games-steamcmd"
     ]
 }

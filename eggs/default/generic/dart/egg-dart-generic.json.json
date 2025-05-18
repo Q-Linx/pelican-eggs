@@ -112,6 +112,7 @@
         }
     ],
     "tags": [
-        "generic/dart"
+        "generic/dart",
+        "generic"
     ]
 }

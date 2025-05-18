@@ -187,6 +187,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/subnautica_nitrox_mod"
+        "games-steamcmd/subnautica_nitrox_mod",
+        "games-steamcmd"
     ]
 }

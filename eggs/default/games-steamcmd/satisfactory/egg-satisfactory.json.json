@@ -142,6 +142,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/satisfactory"
+        "games-steamcmd/satisfactory",
+        "games-steamcmd"
     ]
 }

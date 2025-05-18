@@ -318,6 +318,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/thefront"
+        "games-steamcmd/thefront",
+        "games-steamcmd"
     ]
 }

@@ -42,6 +42,7 @@
         }
     ],
     "tags": [
-        "chatbots/teamspeak3"
+        "chatbots/teamspeak3",
+        "chatbots"
     ]
 }

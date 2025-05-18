@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/mount_blade_II_bannerlord"
+        "games-steamcmd/mount_blade_II_bannerlord",
+        "games-steamcmd"
     ]
 }

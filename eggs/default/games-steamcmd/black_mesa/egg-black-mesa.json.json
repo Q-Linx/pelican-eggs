@@ -110,6 +110,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/black_mesa"
+        "games-steamcmd/black_mesa",
+        "games-steamcmd"
     ]
 }

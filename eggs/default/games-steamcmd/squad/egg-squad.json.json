@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/squad"
+        "games-steamcmd/squad",
+        "games-steamcmd"
     ]
 }

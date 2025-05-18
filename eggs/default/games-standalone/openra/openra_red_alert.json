@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-standalone/openra"
+        "games-standalone/openra",
+        "games-standalone"
     ]
 }

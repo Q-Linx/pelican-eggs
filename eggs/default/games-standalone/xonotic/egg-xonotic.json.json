@@ -53,6 +53,7 @@
         }
     ],
     "tags": [
-        "games-standalone/xonotic"
+        "games-standalone/xonotic",
+        "games-standalone"
     ]
 }

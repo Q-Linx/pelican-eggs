@@ -141,6 +141,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/lotr_moria"
+        "games-steamcmd/lotr_moria",
+        "games-steamcmd"
     ]
 }

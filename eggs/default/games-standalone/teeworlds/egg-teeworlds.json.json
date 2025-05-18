@@ -53,6 +53,7 @@
         }
     ],
     "tags": [
-        "games-standalone/teeworlds"
+        "games-standalone/teeworlds",
+        "games-standalone"
     ]
 }

@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-standalone/rdr"
+        "games-standalone/rdr",
+        "games-standalone"
     ]
 }

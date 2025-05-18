@@ -75,6 +75,7 @@
         }
     ],
     "tags": [
-        "games-standalone/terraria"
+        "games-standalone/terraria",
+        "games-standalone"
     ]
 }

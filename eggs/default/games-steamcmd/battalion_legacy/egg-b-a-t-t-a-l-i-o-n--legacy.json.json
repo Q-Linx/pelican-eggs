@@ -88,6 +88,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/battalion_legacy"
+        "games-steamcmd/battalion_legacy",
+        "games-steamcmd"
     ]
 }

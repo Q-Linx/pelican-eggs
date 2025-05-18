@@ -110,6 +110,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/unturned"
+        "games-steamcmd/unturned",
+        "games-steamcmd"
     ]
 }

@@ -108,6 +108,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/vein"
+        "games-steamcmd/vein",
+        "games-steamcmd"
     ]
 }

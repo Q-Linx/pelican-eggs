@@ -86,6 +86,7 @@
         }
     ],
     "tags": [
-        "games-standalone/eft"
+        "games-standalone/eft",
+        "games-standalone"
     ]
 }

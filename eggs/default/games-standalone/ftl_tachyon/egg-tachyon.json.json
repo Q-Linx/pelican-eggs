@@ -42,6 +42,7 @@
         }
     ],
     "tags": [
-        "games-standalone/ftl_tachyon"
+        "games-standalone/ftl_tachyon",
+        "games-standalone"
     ]
 }

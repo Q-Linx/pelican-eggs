@@ -110,6 +110,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/hurtworld"
+        "games-steamcmd/hurtworld",
+        "games-steamcmd"
     ]
 }

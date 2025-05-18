@@ -42,6 +42,7 @@
         }
     ],
     "tags": [
-        "games-standalone/starmade"
+        "games-standalone/starmade",
+        "games-standalone"
     ]
 }

@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "games-standalone/mindustry"
+        "games-standalone/mindustry",
+        "games-standalone"
     ]
 }

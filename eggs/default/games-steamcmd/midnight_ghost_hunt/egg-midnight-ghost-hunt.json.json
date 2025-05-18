@@ -165,6 +165,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/midnight_ghost_hunt"
+        "games-steamcmd/midnight_ghost_hunt",
+        "games-steamcmd"
     ]
 }

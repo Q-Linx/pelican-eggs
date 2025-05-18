@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-standalone/SuperTuxKart"
+        "games-standalone/SuperTuxKart",
+        "games-standalone"
     ]
 }

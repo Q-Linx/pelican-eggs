@@ -209,6 +209,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/the_isle"
+        "games-steamcmd/the_isle",
+        "games-steamcmd"
     ]
 }

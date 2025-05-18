@@ -129,6 +129,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/abiotic_factor"
+        "games-steamcmd/abiotic_factor",
+        "games-steamcmd"
     ]
 }

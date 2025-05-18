@@ -85,6 +85,7 @@
         }
     ],
     "tags": [
-        "games-standalone/nazi_zombies_portable"
+        "games-standalone/nazi_zombies_portable",
+        "games-standalone"
     ]
 }

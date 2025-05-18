@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "chatbots/discord"
+        "chatbots/discord",
+        "chatbots"
     ]
 }

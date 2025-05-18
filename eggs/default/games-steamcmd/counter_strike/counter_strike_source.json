@@ -97,6 +97,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/counter_strike"
+        "games-steamcmd/counter_strike",
+        "games-steamcmd"
     ]
 }

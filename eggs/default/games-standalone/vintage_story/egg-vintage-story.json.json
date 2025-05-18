@@ -86,6 +86,7 @@
         }
     ],
     "tags": [
-        "games-standalone/vintage_story"
+        "games-standalone/vintage_story",
+        "games-standalone"
     ]
 }

@@ -101,6 +101,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/icarus"
+        "games-steamcmd/icarus",
+        "games-steamcmd"
     ]
 }

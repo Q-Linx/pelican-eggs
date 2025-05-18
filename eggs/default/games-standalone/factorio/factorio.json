@@ -152,6 +152,7 @@
         }
     ],
     "tags": [
-        "games-standalone/factorio"
+        "games-standalone/factorio",
+        "games-standalone"
     ]
 }

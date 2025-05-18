@@ -53,6 +53,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/solace_crafting"
+        "games-steamcmd/solace_crafting",
+        "games-steamcmd"
     ]
 }

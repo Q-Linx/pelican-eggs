@@ -155,6 +155,7 @@
         }
     ],
     "tags": [
-        "games-standalone/hogwarp"
+        "games-standalone/hogwarp",
+        "games-standalone"
     ]
 }

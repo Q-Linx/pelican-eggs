@@ -60,6 +60,7 @@
         }
     ],
     "tags": [
-        "minecraft/proxy"
+        "minecraft/proxy",
+        "minecraft"
     ]
 }

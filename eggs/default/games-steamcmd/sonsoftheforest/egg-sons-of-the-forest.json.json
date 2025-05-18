@@ -198,6 +198,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/sonsoftheforest"
+        "games-steamcmd/sonsoftheforest",
+        "games-steamcmd"
     ]
 }

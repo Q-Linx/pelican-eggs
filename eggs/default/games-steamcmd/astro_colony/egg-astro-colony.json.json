@@ -232,6 +232,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/astro_colony"
+        "games-steamcmd/astro_colony",
+        "games-steamcmd"
     ]
 }

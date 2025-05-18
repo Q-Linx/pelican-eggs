@@ -132,6 +132,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/7_days_to_die"
+        "games-steamcmd/7_days_to_die",
+        "games-steamcmd"
     ]
 }

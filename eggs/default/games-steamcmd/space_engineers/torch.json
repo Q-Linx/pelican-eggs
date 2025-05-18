@@ -198,6 +198,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/space_engineers"
+        "games-steamcmd/space_engineers",
+        "games-steamcmd"
     ]
 }

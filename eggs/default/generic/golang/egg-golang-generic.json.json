@@ -53,6 +53,7 @@
         }
     ],
     "tags": [
-        "generic/golang"
+        "generic/golang",
+        "generic"
     ]
 }

@@ -110,6 +110,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/quake_live"
+        "games-steamcmd/quake_live",
+        "games-steamcmd"
     ]
 }

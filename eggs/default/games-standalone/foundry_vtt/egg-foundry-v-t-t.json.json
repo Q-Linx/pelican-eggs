@@ -64,6 +64,7 @@
         }
     ],
     "tags": [
-        "games-standalone/foundry_vtt"
+        "games-standalone/foundry_vtt",
+        "games-standalone"
     ]
 }

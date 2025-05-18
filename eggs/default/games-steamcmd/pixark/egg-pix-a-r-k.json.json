@@ -187,6 +187,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/pixark"
+        "games-steamcmd/pixark",
+        "games-steamcmd"
     ]
 }

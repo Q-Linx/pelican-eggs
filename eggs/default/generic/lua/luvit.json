@@ -108,6 +108,7 @@
         }
     ],
     "tags": [
-        "generic/lua"
+        "generic/lua",
+        "generic"
     ]
 }

@@ -176,6 +176,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/portal_knights"
+        "games-steamcmd/portal_knights",
+        "games-steamcmd"
     ]
 }

@@ -42,6 +42,7 @@
         }
     ],
     "tags": [
-        "games-standalone/openarena"
+        "games-standalone/openarena",
+        "games-standalone"
     ]
 }

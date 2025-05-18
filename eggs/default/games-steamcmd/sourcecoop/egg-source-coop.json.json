@@ -165,6 +165,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/sourcecoop"
+        "games-steamcmd/sourcecoop",
+        "games-steamcmd"
     ]
 }

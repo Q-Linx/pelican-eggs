@@ -119,6 +119,7 @@
         }
     ],
     "tags": [
-        "games-standalone/mohaa"
+        "games-standalone/mohaa",
+        "games-standalone"
     ]
 }

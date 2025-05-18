@@ -163,6 +163,7 @@
         }
     ],
     "tags": [
-        "games-standalone/urbanterror"
+        "games-standalone/urbanterror",
+        "games-standalone"
     ]
 }

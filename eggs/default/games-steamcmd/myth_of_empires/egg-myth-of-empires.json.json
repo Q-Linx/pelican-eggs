@@ -196,6 +196,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/myth_of_empires"
+        "games-steamcmd/myth_of_empires",
+        "games-steamcmd"
     ]
 }

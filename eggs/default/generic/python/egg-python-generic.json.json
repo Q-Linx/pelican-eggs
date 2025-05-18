@@ -155,6 +155,7 @@
         }
     ],
     "tags": [
-        "generic/python"
+        "generic/python",
+        "generic"
     ]
 }

@@ -66,6 +66,7 @@
         }
     ],
     "tags": [
-        "games-standalone/wine"
+        "games-standalone/wine",
+        "games-standalone"
     ]
 }

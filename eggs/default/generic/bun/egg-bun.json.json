@@ -131,6 +131,7 @@
         }
     ],
     "tags": [
-        "generic/bun"
+        "generic/bun",
+        "generic"
     ]
 }

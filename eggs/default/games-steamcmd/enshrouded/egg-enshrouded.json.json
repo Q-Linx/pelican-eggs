@@ -121,6 +121,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/enshrouded"
+        "games-steamcmd/enshrouded",
+        "games-steamcmd"
     ]
 }

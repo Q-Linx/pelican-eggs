@@ -207,6 +207,7 @@
         }
     ],
     "tags": [
-        "games-standalone/minetest"
+        "games-standalone/minetest",
+        "games-standalone"
     ]
 }

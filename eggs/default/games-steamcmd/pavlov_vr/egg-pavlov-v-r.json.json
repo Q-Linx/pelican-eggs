@@ -99,6 +99,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/pavlov_vr"
+        "games-steamcmd/pavlov_vr",
+        "games-steamcmd"
     ]
 }

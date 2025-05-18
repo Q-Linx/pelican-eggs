@@ -130,6 +130,7 @@
         }
     ],
     "tags": [
-        "games-standalone/beamng"
+        "games-standalone/beamng",
+        "games-standalone"
     ]
 }

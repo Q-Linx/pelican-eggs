@@ -99,6 +99,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/necesse"
+        "games-steamcmd/necesse",
+        "games-steamcmd"
     ]
 }

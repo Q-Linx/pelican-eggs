@@ -130,6 +130,7 @@
         }
     ],
     "tags": [
-        "games-standalone/path_of_titans"
+        "games-standalone/path_of_titans",
+        "games-standalone"
     ]
 }

@@ -198,6 +198,7 @@
         }
     ],
     "tags": [
-        "games-steamcmd/the_forest"
+        "games-steamcmd/the_forest",
+        "games-steamcmd"
     ]
 }
