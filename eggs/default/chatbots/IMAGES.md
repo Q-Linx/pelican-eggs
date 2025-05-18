@@ -1,0 +1,15 @@
+ghcr.io/parkervcp/yolks:alpine
+ghcr.io/parkervcp/yolks:bot_bastion
+ghcr.io/parkervcp/yolks:bot_parkertron
+ghcr.io/parkervcp/yolks:bot_red
+ghcr.io/parkervcp/yolks:bot_sinusbot
+ghcr.io/parkervcp/yolks:java_16
+ghcr.io/parkervcp/yolks:java_19
+ghcr.io/parkervcp/yolks:node_16
+ghcr.io/parkervcp/yolks:nodejs_18
+ghcr.io/parkervcp/yolks:nodejs_20
+ghcr.io/parkervcp/yolks:python_2.7
+ghcr.io/parkervcp/yolks:python_3.7
+ghcr.io/parkervcp/yolks:ubuntu
+ghcr.io/pterodactyl/yolks:java_17
+ghcr.io/pterodactyl/yolks:java_8

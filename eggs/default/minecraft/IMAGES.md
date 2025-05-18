@@ -1,0 +1,13 @@
+ghcr.io/parkervcp/yolks:debian
+ghcr.io/parkervcp/yolks:java_11
+ghcr.io/parkervcp/yolks:java_16
+ghcr.io/parkervcp/yolks:java_17
+ghcr.io/parkervcp/yolks:java_21
+ghcr.io/parkervcp/yolks:java_8
+ghcr.io/parkervcp/yolks:wine_staging
+ghcr.io/pterodactyl/yolks:java_11
+ghcr.io/pterodactyl/yolks:java_16
+ghcr.io/pterodactyl/yolks:java_17
+ghcr.io/pterodactyl/yolks:java_18
+ghcr.io/pterodactyl/yolks:java_21
+ghcr.io/pterodactyl/yolks:java_8
