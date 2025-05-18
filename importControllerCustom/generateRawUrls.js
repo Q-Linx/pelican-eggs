@@ -6,10 +6,10 @@ const GITHUB_REPO = 'pelican-eggs';
 const BRANCH = 'main';
 
 const repoRoot = path.resolve(__dirname, '..');
-const startFolder = path.join(repoRoot, 'eggs', 'default');
+const startFolder = path.join(repoRoot, 'eggs', 'custom');
 const outputFolder = repoRoot;
 
-const rawBaseUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/eggs/default`;
+const rawBaseUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/eggs/custom`;
 
 const grouped = {}; // { minecraft: [ { name, url } ], ... }
 
