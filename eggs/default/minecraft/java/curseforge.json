@@ -78,6 +78,7 @@
         }
     ],
     "tags": [
-        "minecraft/java"
+        "minecraft/java",
+        "forge"
     ]
 }
